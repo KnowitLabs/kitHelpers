@@ -1,0 +1,21 @@
+{
+  "name": "kitHelpers",
+  "version": "1.0.0",
+  "homepage": "https://github.com/KnowitLabs/kitHelpers",
+  "authors": [
+    "Andreas Norman <andreas.norman@knowit.se>"
+  ],
+  "description": "A collection of Handlebar helpers to aid in the development of new websites",
+  "keywords": [
+    "handlebars",
+    "helpers"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
