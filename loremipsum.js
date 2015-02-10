@@ -23,21 +23,6 @@
 			return title;
 		}
 
-		function getRandomImageUrl(type) {
-			var image = '';
-			var item = Math.floor(Math.random() * 7) + 1;
-			if (type === 'rectangle') {
-				image = 'assets/img/rectangle{X}.png'.replace('{X}', item);
-			} else if (type === 'square') {
-				image = 'assets/img/square{X}.png'.replace('{X}', item);
-			} else if (type === 'slide') {
-				image = 'assets/img/slide{X}.png'.replace('{X}', item);
-			} else if (type === 'person') {
-				image = 'assets/img/person{X}.png'.replace('{X}', item);
-			}
-			return image;
-		}
-
 		function capitaliseFirstLetter(string) {
 			return string.charAt(0).toUpperCase() + string.slice(1);
 		}
@@ -95,11 +80,6 @@
 				loremipsum +='.';
 			}
 			return new Handlebars.SafeString(loremipsum);
-		});
-
-		Handlebars.registerHelper('image', function (type, block) {
-			var image = getRandomImageUrl(type);
-			return image;
 		});
 
 	};
