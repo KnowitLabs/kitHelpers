@@ -1,4 +1,4 @@
-# kitHelpers 1.1.0
+# kitHelpers 1.1.1
 A collection of Handlebar helpers to aid in the development of new websites
 
 ###Changelog
