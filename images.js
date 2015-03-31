@@ -1,17 +1,22 @@
 (function() {
   module.exports.register = function(Handlebars, options) {
 
+    /*
+      Type: "rectangle", "square" or "person"
+    */
     function getRandomImageUrl(type) {
       var image = '';
-      var item = Math.floor(Math.random() * 7) + 1;
+      var numberOfImages = 21; // Max number of images to randomize amongst
+      if (type === 'person') {
+        numberOfImages = 7;
+      }
+      var item = Math.floor(Math.random() * numberOfImages) + 1;
       if (type === 'rectangle') {
-        image = 'rectangle{X}.png'.replace('{X}', item);
+        image = 'rectangle{X}.jpg'.replace('{X}', item);
       } else if (type === 'square') {
-        image = 'square{X}.png'.replace('{X}', item);
-      } else if (type === 'slide') {
-        image = 'slide{X}.png'.replace('{X}', item);
+        image = 'square{X}.jpg'.replace('{X}', item);
       } else if (type === 'person') {
-        image = 'person{X}.png'.replace('{X}', item);
+        image = 'person{X}.jpg'.replace('{X}', item);
       }
       return image;
     }

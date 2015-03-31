@@ -18,7 +18,7 @@
 		}
 
 		function getRandomTitle() {
-			var titleArray = ['CEO', 'Manager', 'Doctor', 'Assistant', 'Carpenter', 'Agent', 'Janitor'];
+			var titleArray = ['CEO', 'Manager', 'Doctor', 'Assistant', 'Carpenter', 'Agent', 'Janitor', 'CFO', 'President', 'Vice President'];
 			var title = titleArray[Math.floor(Math.random() * titleArray.length)];
 			return title;
 		}
